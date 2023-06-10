@@ -1,19 +1,19 @@
-.container-fluid {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
 .navbar {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border: 0;
-  border-radius: 0;
-  margin-bottom: 0;
-  /* margin-top: 50px; */
-  font-size: 12px;
   letter-spacing: 5px;
+  padding: 0;
   position: fixed;
   width: 100%;
+  top: 0;
+}
+
+/* .container-fluid {
+  padding: 30px 12px;
+} */
+
+li {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .navbar-nav li a:hover {
@@ -43,11 +43,43 @@ button {
   margin-top: 15px;
 }
 
-/* .parent {
-  margin-top: 500px;
-} */
-
 main,
 section {
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+p {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: hsl(233, 8%, 62%);
+}
+
+a {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 500;
+  color: hsl(233, 26%, 24%);
+  font-size: 30px;
+}
+
+
+
+/* @media (min-width: 300px) and (max-width: 820px) {
+  body {
+    background-color: green;
+  }
+} */
+
+@media (max-width: 80em) {
+
+  main,
+  section {
+    margin-top: 100px;
+  }
 }
