@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 // let posts = [];
 
-mongoose.connect(process.env.KEY);
+mongoose.connect("mongodb+srv://" + process.env.USERNAME + ":" + process.env.PASSWORD + "@cluster0.5vebfpi.mongodb.net/blogDB");
 
 const postSchema = new mongoose.Schema({
   title: String,
