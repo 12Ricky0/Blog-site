@@ -5,10 +5,11 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 var _ = require("lodash");
+const port = process.env.PORT || 3000;
 
 // let posts = [];
 
-mongoose.connect(process.env.KEY + '/blogDB');
+mongoose.connect(process.env.KEY);
 
 const postSchema = new mongoose.Schema({
   title: String,
@@ -95,6 +96,6 @@ app.get('/post/:postId', (req, res) => {
 
 
 
-app.listen(3000, function () {
-  console.log("Server started on port 3000");
-});
+app.listen(port, () => {
+  console.log(`Server started on port ${port}!...`);
+})
