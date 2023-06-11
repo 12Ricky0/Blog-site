@@ -73,6 +73,10 @@ app.post('/compose', (req, res) => {
       res.redirect("/");
 
     })
+    .catch((error) => {
+      console.error(error);
+    });
+
 
 });
 
@@ -86,7 +90,9 @@ app.get('/post/:postId', (req, res) => {
         content: post.content
       });
     })
-
+    .catch((error) => {
+      console.error(error);
+    });
 });
 
 
