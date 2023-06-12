@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 
 // let posts = [];
 
-mongoose.connect("mongodb+srv://" + process.env.USERNAME + ":" + process.env.PASSWORD + "@cluster0.5vebfpi.mongodb.net/blogDB",
+mongoose.connect(process.env.MONGODB_URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
